@@ -18,13 +18,13 @@
     transition: all .4s ease;
 }
 ::-webkit-scrollbar-thumb {
-    background: #c70039; 
+    background: #c70039;
     border-radius: 4px;
     width: 4px;
     transition: all .4s ease;
   }
   ::-webkit-scrollbar-track {
-    background: #101010; 
+    background: #101010;
     border-radius: 4px;
     width: 4px;
   }
@@ -40,7 +40,7 @@ input[type=number] {
 }
   html{
     background: #101010;
-    
+
   }
   #loader{
       display: flex;
@@ -231,7 +231,7 @@ body{
     height: auto;
     background-size: cover;
     background-position: center;
-    width: 40%;   
+    width: 40%;
     height: 100vh;
 
 }
@@ -263,7 +263,18 @@ body{
     z-index: 2;
     font-weight:700;
     font-family: poppins;
-    font-size: 65px;
+    font-size: 50px;
+}
+.adventury{
+  background-color: #aa0404; /* Green */
+  border: none;
+  color: white;
+  border-radius: 12px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 .header-content .secondline{
     z-index: 2;
@@ -1043,7 +1054,7 @@ padding-bottom: 40px;
     text-align: center;
     width: 100%;
     background: #101010;
-    position: relative; 
+    position: relative;
 }
 .contact-header{
     height: auto;
@@ -1254,7 +1265,7 @@ form button:hover{
 }
 .color-panel{
     height: 45px;
-    cursor: pointer; 
+    cursor: pointer;
     width:45px;
     display: flex;
     align-items: center;
@@ -1264,7 +1275,7 @@ form button:hover{
     background: whitesmoke;
 }
 .color-panel img{
-    height: 40px; 
+    height: 40px;
     width:40px;
     padding:2px;
     animation: rotate 2s linear infinite;
@@ -1376,7 +1387,7 @@ For devices with smaller width like mobile phone
     .header-image{
         float: right;
         height: auto;
-        width: 0%;   
+        width: 0%;
     }
     .social-media-links{
         width: 100%;
@@ -1425,7 +1436,7 @@ For devices with smaller width like mobile phone
         height: auto;
         padding-right: 0px;
         width: auto;
-    
+
     }
     #about-content{
         display: flex;
@@ -1802,9 +1813,9 @@ For devices with smaller width like mobile phone
             .hire-me-section{
                 display: none;
             }
-           
+
 }
-       
+
 /*
 
 for tabs and large phones
@@ -1831,7 +1842,7 @@ for tabs and large phones
     .header-image{
         float: right;
         height: auto;
-        width: 0%;   
+        width: 0%;
     }
     .social-media-links{
         width: 100%;
@@ -1880,7 +1891,7 @@ for tabs and large phones
         height: auto;
         padding-right: 0px;
         width: auto;
-    
+
     }
     #about-content{
         display: flex;
@@ -1957,7 +1968,7 @@ for tabs and large phones
         cursor: pointer;
         position: relative;
         transition: all .4s ease;
-    
+
     }
     .service{
         height:auto;
@@ -2261,8 +2272,8 @@ for tabs and large phones
             .hire-me-section{
                 display: none;
             }
-            
-            
+
+
 }
 
 
@@ -2323,7 +2334,7 @@ for tabs and large phones
         cursor: pointer;
         position: relative;
         transition: all .4s ease;
-    
+
     }
     .service{
         height:400px;
@@ -2343,7 +2354,7 @@ for tabs and large phones
     .service-img{
         text-align: center;
     }
-    
+
     .service-img img{
         display: inline-block;
         z-index: 2;
