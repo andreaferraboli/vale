@@ -41,6 +41,8 @@
             let number = parseInt(window.location.pathname.match(/page(\d+)/)[1], 10);
             window.location.href = 'page' + ++number + '.html';
           }, 2000);
+        }else{
+          window.alert("risposta sbagliata :(");
         }
       } else {
         document.getElementById('result').innerText = 'An error occurred: ' + response.statusText;
