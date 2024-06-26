@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Caccia al Tesoro di Compleanno di Valentina</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>INDIZIO NUMERO 4</h1>
+  <p>Trova la parola chiave nascosta per andare avanti nel gioco!</p>
+  <form id="keywordForm">
+    <label for="keyword">Inserisci la Parola Chiave:</label>
+    <input type="text" id="keyword" name="keyword" required>
+    <button type="submit">Invia</button>
+  </form>
+  <div id="result"></div>
+</div>
+<script>
+  document.getElementById('keywordForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const keyword = document.getElementById('keyword').value;
+
+    try {
+      const response = await fetch('https://valeserver.vercel.app/check-keyword/4', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ keyword })
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        document.getElementById('result').innerText = result.message;
+        if (result.message === "Correct keyword!") {
+          window.alert("risposta esatta, attendi il reindirizzamento alla pagina dopo");
+          setTimeout(function() {
+            let number = parseInt(window.location.pathname.match(/page(\d+)/)[1], 10);
+            window.location.href = 'page' + ++number + '.html';
+          }, 2000);
+        }
+      } else {
+        document.getElementById('result').innerText = 'An error occurred: ' + response.statusText;
+      }
+    } catch (error) {
+      document.getElementById('result').innerText = 'Failed to fetch: ' + error.message;
+      console.error('Error:', error);
+    }
+  });
+</script>
+</body>
+</html>
