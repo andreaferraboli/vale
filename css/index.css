@@ -301,23 +301,23 @@ body {
   font-weight: 700;
   font-family: poppins;
   font-size: 50px;
-  margin-bottom: 100%;
-  margin-top: -40%;
 }
 
 .adventury {
   background-color:#0a4d00; /* Green */
   border: none;
   color: white;
-  border-radius: 12px;
-  padding: 15px 32px;
+  border-radius: 50px;
+  padding: 20px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 30px;
+  font-size: 1.5rem;
+  width: 100%;
 }
 .adventury .icon{
   margin-left:10px ;
+  height: auto;
 }
 
 .header-content .secondline {
